@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+:root{
+    ---bg-color--:#272935;
+    ---white--:#eae9e9;
+    --grey--:grey;
+    --c-primary-main: #0057FF;
+    --c-primary-dark: #012293;
+    ---svg--black--:black;
+    ---svg--white--:#fff;
+    ---icon-font-:20px;
+  --gradient-primary: linear-gradient(to bottom right, var(--c-primary-main), var(--c-primary-dark));
+}
+ html{
+    scroll-behavior: smooth;
+ }
+body{
+    background-color: var(---bg-color--);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: 0.3s ease;
+    font-family:'Segoe UI',  sans-serif
+}
+*::before,::after{
+    box-sizing: border-box;
+}
+
+.header{
+    min-height: max-content;
+    width: 100%;
+}
+
+.header .navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    background-color: var(---bg-color--);
+    border-bottom: 1px solid var(--grey--);
+    /* padding: 0 7px 0 7px; */
+}
+.header .navbar .logo{
+width:50px;
+font-family: 'Pacifico', cursive;
+margin-left:70px ;
+font-weight: thin;
+font-size: 20px;
+color: var(---white--);
+}
+.header .navbar .nav{
+    display:none;
+    position: fixed;
+    right: 0px;
+    top: 80px;
+    z-index: 2;
+    /* opacity: 0; */
+    width: 250px;
+    border-radius: 7px;
+    background-color: var(---bg-color--);
+    box-shadow: 0.5px 0.5px 3px var(--grey--);
+}
+ 
+.header .navbar .nav .list-con{
+    display: flex;
+    flex-direction: column;
+    justify-content: ;
+    align-items: ;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.header .navbar .nav .list-con .list-item{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;  
+}
+.header .navbar .nav .list-con .list-item .link{
+    color:var(---white--);
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+    padding: 10px 0;
+}
+.header .navbar .nav .list-con .list-item .link:hover{
+  color: grey;
+  transition: 0.5s ease;
+}
+.times .line1{
+    transform: rotate(45deg) translateX(4px) translateY(5px);
+    transition: 0.3s ease-in;
+}
+.times .line2{
+    display: none;
+}
+.times .line3{
+    transform: rotate(-45deg)  ;
+    transition: 0.3s ease-in;
+} 
+
+.header .navbar .nav .list-con .list-item i{
+    font-size: var(---icon-font-);
+    align-items: center;
+    color: var(---white--);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    cursor: pointer;
+}
+.header .navbar .nav .list-con .list-item i:hover{
+    color: blue;
+    transition: 0.3s ease;
+}
+.header .navbar .burger{
+    /* width: 70px;
+    height:50px; */
+    margin-left:auto;
+    margin-right: 20px;
+    position:relative;
+    cursor: pointer;
+    padding: 3px;
+    /* background-color: black; */
+}
+.header .navbar .burger >*{
+    width:27px;
+    height:2px;
+    margin:5px 0;
+    border-radius: 3px;
+    background-color: var(---white--);
+}
+
+
+/* PROJECT */
+.projects{
+    margin-top: 200px;
+    text-align: center;
+}
+.projects .project-con{
+    width: 100%;
+}
+.projects .project-con h1{
+    color: #eae9e9;
+    font-size: 3rem;
+}
+
+.projects .project-con h3{
+    color: #eae9e9;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.projects .project-con .project-list{
+    display: grid;
+    grid-template-columns:repeat(auto-fill, minmax(300px ,3fr));
+    width: 90%;
+    gap: 50px;
+    margin: 0 auto;
+}
+.projects .project-con .project-list .project{
+    position: relative;  
+    box-shadow: 0.5px 0.5px 5px rgb(135, 135, 135),
+              inset  0.5px 0.9px 7px rgb(33, 33, 33);
+    border-radius: 7px;
+}
+.projects .project-con .project-list .project img{
+    width: 100%;
+    height: 200px;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    object-fit: cover;
+}
+ .projects .project-con .project-list .project-name{
+    text-align: left;
+    padding-left:20px ;
+    color: aliceblue;
+    text-transform: capitalize;
+ }
+ .projects .project-con .project-list .project-name p{
+    color: aliceblue;
+    font-size: 1rem;
+    line-height:1.5 ;
+ }
+ .projects .project-con .project-list  .live-demo{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    position: relative;
+    border-top: 1px solid grey;
+ }
+ .projects .project-con .project-list  .live-demo > *:nth-child(1){
+   width: 70%;
+   text-align: left;
+   padding-left:20px ;
+   display: grid;
+   align-items: center;
+   justify-content: left;
+   color: aliceblue;
+   height: 100%;
+   font-weight: 600;
+   text-decoration: none;
+   border-right: 1px solid grey;
+ }
+ .projects .project-con .project-list  .live-demo > *:nth-child(2){
+    font-size: var(---icon-font-);
+    color: aliceblue;
+    text-align: center;
+    width: 30%;
+ }
+/* media query */
+@media screen and (min-width:600px){
+    .header .navbar .nav{
+        display:flex;
+        position: fixed;
+        right:0 ;
+        top: 0px;
+        z-index: 2;
+        width:400px;
+        height: inherit;
+        background-color: var(---bg-color--);
+        box-shadow: 0.5px 0.5px 3px var(---bg-color--);
+    }
+    .header .navbar .nav .list-con{
+        flex-direction: row ;
+        height: inherit;
+    }
+    .header .navbar .nav .list-con .list-item{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    text-align: center;
+    height: inherit;
+}
+    .header .navbar .nav .list-con .list-item .link{
+         
+         text-align: center;
+         display: flex;
+         align-items: center;
+         /* border: 0.5px solid var(--grey--); */
+    }
+    .header .navbar .burger{
+        display: none;
+    }
+}
+
+/* Footer */
+footer{
+    width: 100%;
+    margin-top: 20px;
+    border-top: 1px solid grey;
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    color: white;
+}
+.footer-container i{
+    font-size: 25px;
+    cursor: pointer;
+    background-color: var(---white--);
+    color: var(---bg-color--);
+    padding: 7px;
+    border-radius: 5px;
+    margin: 0 3px;
+}
+.footer-container .footer-logo h2{
+    font-family: 'Pacifico', cursive;
+    font-size: 1.7rem;
+}
+.footer-container i:hover{
+   background-color: var(---bg-color--);
+   color: var(--c-primary-main);
+}
