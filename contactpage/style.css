@@ -140,7 +140,20 @@ color: var(---white--);
     border-radius: 3px;
     background-color: var(---white--);
 }
-
+.navbar .nav.sh{
+    animation: slide 0.4s forwards;
+    display: flex;
+}
+@keyframes slide{
+    0%{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
  
  /* contact page */
