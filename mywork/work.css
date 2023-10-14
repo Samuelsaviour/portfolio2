@@ -161,6 +161,7 @@ color: var(---white--);
 .projects{
     margin-top: 200px;
     text-align: center;
+    padding: 0 25px;
 }
 .projects .project-con{
     width: 100%;
@@ -173,7 +174,11 @@ color: var(---white--);
 .projects .project-con h3{
     color: #eae9e9;
     font-size: 1.5rem;
+    /* width: 250px; */
+    text-align: center;
     margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .projects .project-con .project-list{
     display: grid;
