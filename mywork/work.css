@@ -48,7 +48,7 @@ width:50px;
 font-family: 'Pacifico', cursive;
 margin-left:70px ;
 font-weight: thin;
-font-size: 20px;
+font-size: 30px;
 color: var(---white--);
 }
 .header .navbar .nav{
@@ -161,7 +161,7 @@ color: var(---white--);
 .projects{
     margin-top: 200px;
     text-align: center;
-    padding: 0 25px;
+    padding: 0 5px;
 }
 .projects .project-con{
     width: 100%;
@@ -175,6 +175,7 @@ color: var(---white--);
     color: #eae9e9;
     font-size: 1.5rem;
     /* width: 250px; */
+    padding: 0 15px;
     text-align: center;
     margin-bottom: 20px;
     margin-left: auto;
@@ -284,7 +285,8 @@ footer{
 .footer-container{
     display: flex;
     flex-direction: column;
-    padding: 0 20px;
+    padding: 0 70px;
+
     color: white;
 }
 .footer-container i{

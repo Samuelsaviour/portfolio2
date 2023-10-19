@@ -55,7 +55,7 @@ body{
 .header .navbar .logo{
 width:20px;
 /* font-family: 'Pacifico', cursive; */
-font-family: 'Cedarville Cursive', cursive;
+font-family: 'pacifico', cursive;
 margin-left:70px ;
 font-weight: thin;
 font-size: 30px;
@@ -245,19 +245,20 @@ main{
 }
 .number1{
     font-size: 50px;
-     text-size-adjust:50px ;
+      text-size-adjust:50px ; 
     font-weight: 600;
     color: var(---white--);
-    text-indent: 50%;
-    width: max-content;
+   text-align: center;
     /* font-family: font3; */
+    width: 100%;
+   
     stroke-width: 1.5px;
-    margin-left: 70px;
-    margin-right: ;
+     
 }
 .About h1{
-    margin:0px 0px 0px 70px;
+    margin:0px 0px 0px 0px;
     color: var(---white--);
+    text-align: center;
 }
 .About .intro-m{
     display: grid;
@@ -864,7 +865,7 @@ footer{
         transform: translateY(40px);
     }
     100%{
-        opacity: 1;
+        opacity: 1;.........
         transform: translateY(0);
     }
 }
